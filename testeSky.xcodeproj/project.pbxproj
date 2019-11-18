@@ -16,6 +16,8 @@
 		94489EF8238360B1003BFAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94489EF6238360B1003BFAF9 /* LaunchScreen.storyboard */; };
 		94489F03238360B2003BFAF9 /* testeSkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94489F02238360B2003BFAF9 /* testeSkyTests.swift */; };
 		94489F0E238360B2003BFAF9 /* testeSkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94489F0D238360B2003BFAF9 /* testeSkyUITests.swift */; };
+		94489F2023836102003BFAF9 /* FilmesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94489F1F23836102003BFAF9 /* FilmesStoryboard.storyboard */; };
+		94489F2223836115003BFAF9 /* NavigationControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94489F2123836115003BFAF9 /* NavigationControllerStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		94489F09238360B2003BFAF9 /* testeSkyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testeSkyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94489F0D238360B2003BFAF9 /* testeSkyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testeSkyUITests.swift; sourceTree = "<group>"; };
 		94489F0F238360B2003BFAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94489F1F23836102003BFAF9 /* FilmesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilmesStoryboard.storyboard; sourceTree = "<group>"; };
+		94489F2123836115003BFAF9 /* NavigationControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationControllerStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,10 @@
 		94489EE7238360B0003BFAF9 /* testeSky */ = {
 			isa = PBXGroup;
 			children = (
+				94489F1E238360DD003BFAF9 /* DAO */,
+				94489F1D238360D4003BFAF9 /* Controller */,
+				94489F1C238360CD003BFAF9 /* View */,
+				94489F1B238360C2003BFAF9 /* Modelo */,
 				94489EE8238360B0003BFAF9 /* AppDelegate.swift */,
 				94489EEA238360B0003BFAF9 /* SceneDelegate.swift */,
 				94489EEC238360B0003BFAF9 /* ViewController.swift */,
@@ -129,6 +137,44 @@
 				94489F0F238360B2003BFAF9 /* Info.plist */,
 			);
 			path = testeSkyUITests;
+			sourceTree = "<group>";
+		};
+		94489F1B238360C2003BFAF9 /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		94489F1C238360CD003BFAF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94489F232383638F003BFAF9 /* Storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94489F1D238360D4003BFAF9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		94489F1E238360DD003BFAF9 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DAO;
+			sourceTree = "<group>";
+		};
+		94489F232383638F003BFAF9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				94489F1F23836102003BFAF9 /* FilmesStoryboard.storyboard */,
+				94489F2123836115003BFAF9 /* NavigationControllerStoryboard.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +282,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				94489EF8238360B1003BFAF9 /* LaunchScreen.storyboard in Resources */,
+				94489F2223836115003BFAF9 /* NavigationControllerStoryboard.storyboard in Resources */,
 				94489EF5238360B1003BFAF9 /* Assets.xcassets in Resources */,
 				94489EF0238360B0003BFAF9 /* Main.storyboard in Resources */,
+				94489F2023836102003BFAF9 /* FilmesStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
