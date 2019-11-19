@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		735E74605F86FEC4DCF9087E /* Pods_testeSkyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2E3C98774B8D1E1E10066A /* Pods_testeSkyTests.framework */; };
+		91DA9F1763C8FC9346AB9005 /* Pods_testeSky.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 323C3635ADB4FBB200CB7CEC /* Pods_testeSky.framework */; };
+		9403635C23836683007FB59D /* FilmesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9403635B23836683007FB59D /* FilmesViewController.swift */; };
+		9403635F23836697007FB59D /* FilmeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9403635E23836697007FB59D /* FilmeCell.swift */; };
+		9403636123836A61007FB59D /* DAOFilme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9403636023836A61007FB59D /* DAOFilme.swift */; };
+		9403636323836C49007FB59D /* Filme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9403636223836C49007FB59D /* Filme.swift */; };
 		94489EE9238360B0003BFAF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94489EE8238360B0003BFAF9 /* AppDelegate.swift */; };
 		94489EEB238360B0003BFAF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94489EEA238360B0003BFAF9 /* SceneDelegate.swift */; };
 		94489EED238360B0003BFAF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94489EEC238360B0003BFAF9 /* ViewController.swift */; };
@@ -18,6 +24,7 @@
 		94489F0E238360B2003BFAF9 /* testeSkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94489F0D238360B2003BFAF9 /* testeSkyUITests.swift */; };
 		94489F2023836102003BFAF9 /* FilmesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94489F1F23836102003BFAF9 /* FilmesStoryboard.storyboard */; };
 		94489F2223836115003BFAF9 /* NavigationControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94489F2123836115003BFAF9 /* NavigationControllerStoryboard.storyboard */; };
+		E604CBC9DA8F5CF4F2ED2578 /* Pods_testeSky_testeSkyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9E95DA3B6E02C6F396FC6 /* Pods_testeSky_testeSkyUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CA0FCC79429E3D677915598 /* Pods-testeSkyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeSkyTests.debug.xcconfig"; path = "Target Support Files/Pods-testeSkyTests/Pods-testeSkyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		26C9E95DA3B6E02C6F396FC6 /* Pods_testeSky_testeSkyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testeSky_testeSkyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		323C3635ADB4FBB200CB7CEC /* Pods_testeSky.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testeSky.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84781355C8E478C8BFE6F7D9 /* Pods-testeSky-testeSkyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeSky-testeSkyUITests.release.xcconfig"; path = "Target Support Files/Pods-testeSky-testeSkyUITests/Pods-testeSky-testeSkyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9403635B23836683007FB59D /* FilmesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmesViewController.swift; sourceTree = "<group>"; };
+		9403635E23836697007FB59D /* FilmeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmeCell.swift; sourceTree = "<group>"; };
+		9403636023836A61007FB59D /* DAOFilme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAOFilme.swift; sourceTree = "<group>"; };
+		9403636223836C49007FB59D /* Filme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filme.swift; sourceTree = "<group>"; };
 		94489EE5238360B0003BFAF9 /* testeSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testeSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94489EE8238360B0003BFAF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94489EEA238360B0003BFAF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +70,11 @@
 		94489F0F238360B2003BFAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94489F1F23836102003BFAF9 /* FilmesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilmesStoryboard.storyboard; sourceTree = "<group>"; };
 		94489F2123836115003BFAF9 /* NavigationControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationControllerStoryboard.storyboard; sourceTree = "<group>"; };
+		A1B478350BBB7E682A340D11 /* Pods-testeSky-testeSkyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeSky-testeSkyUITests.debug.xcconfig"; path = "Target Support Files/Pods-testeSky-testeSkyUITests/Pods-testeSky-testeSkyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A20D49E5276F5BE80C39BD76 /* Pods-testeSky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeSky.release.xcconfig"; path = "Target Support Files/Pods-testeSky/Pods-testeSky.release.xcconfig"; sourceTree = "<group>"; };
+		DA2E3C98774B8D1E1E10066A /* Pods_testeSkyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testeSkyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD59C8BE279F938D8125157B /* Pods-testeSky.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeSky.debug.xcconfig"; path = "Target Support Files/Pods-testeSky/Pods-testeSky.debug.xcconfig"; sourceTree = "<group>"; };
+		E8E2C07A79E422FD33F1531B /* Pods-testeSkyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeSkyTests.release.xcconfig"; path = "Target Support Files/Pods-testeSkyTests/Pods-testeSkyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91DA9F1763C8FC9346AB9005 /* Pods_testeSky.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735E74605F86FEC4DCF9087E /* Pods_testeSkyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +98,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E604CBC9DA8F5CF4F2ED2578 /* Pods_testeSky_testeSkyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		459768C290FF9420FEC020EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				323C3635ADB4FBB200CB7CEC /* Pods_testeSky.framework */,
+				26C9E95DA3B6E02C6F396FC6 /* Pods_testeSky_testeSkyUITests.framework */,
+				DA2E3C98774B8D1E1E10066A /* Pods_testeSkyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		519C6FD76F2245179DD5A1A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD59C8BE279F938D8125157B /* Pods-testeSky.debug.xcconfig */,
+				A20D49E5276F5BE80C39BD76 /* Pods-testeSky.release.xcconfig */,
+				A1B478350BBB7E682A340D11 /* Pods-testeSky-testeSkyUITests.debug.xcconfig */,
+				84781355C8E478C8BFE6F7D9 /* Pods-testeSky-testeSkyUITests.release.xcconfig */,
+				0CA0FCC79429E3D677915598 /* Pods-testeSkyTests.debug.xcconfig */,
+				E8E2C07A79E422FD33F1531B /* Pods-testeSkyTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9403635D2383668B007FB59D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9403635E23836697007FB59D /* FilmeCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		94489EDC238360B0003BFAF9 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +143,8 @@
 				94489F01238360B1003BFAF9 /* testeSkyTests */,
 				94489F0C238360B2003BFAF9 /* testeSkyUITests */,
 				94489EE6238360B0003BFAF9 /* Products */,
+				519C6FD76F2245179DD5A1A3 /* Pods */,
+				459768C290FF9420FEC020EE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +198,7 @@
 		94489F1B238360C2003BFAF9 /* Modelo */ = {
 			isa = PBXGroup;
 			children = (
+				9403636223836C49007FB59D /* Filme.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -149,6 +206,7 @@
 		94489F1C238360CD003BFAF9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9403635D2383668B007FB59D /* Cells */,
 				94489F232383638F003BFAF9 /* Storyboard */,
 			);
 			path = View;
@@ -157,6 +215,7 @@
 		94489F1D238360D4003BFAF9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				9403635B23836683007FB59D /* FilmesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -164,6 +223,7 @@
 		94489F1E238360DD003BFAF9 /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				9403636023836A61007FB59D /* DAOFilme.swift */,
 			);
 			path = DAO;
 			sourceTree = "<group>";
@@ -184,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94489F12238360B2003BFAF9 /* Build configuration list for PBXNativeTarget "testeSky" */;
 			buildPhases = (
+				3579CEF6E67391F7C8DB0D9B /* [CP] Check Pods Manifest.lock */,
 				94489EE1238360B0003BFAF9 /* Sources */,
 				94489EE2238360B0003BFAF9 /* Frameworks */,
 				94489EE3238360B0003BFAF9 /* Resources */,
+				DDD3F76D25579A29B895FFF0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94489F15238360B2003BFAF9 /* Build configuration list for PBXNativeTarget "testeSkyTests" */;
 			buildPhases = (
+				03E393F43A0169CFCED7BC37 /* [CP] Check Pods Manifest.lock */,
 				94489EFA238360B1003BFAF9 /* Sources */,
 				94489EFB238360B1003BFAF9 /* Frameworks */,
 				94489EFC238360B1003BFAF9 /* Resources */,
@@ -219,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 94489F18238360B2003BFAF9 /* Build configuration list for PBXNativeTarget "testeSkyUITests" */;
 			buildPhases = (
+				17C503C23A90ACA788BBD6B2 /* [CP] Check Pods Manifest.lock */,
 				94489F05238360B2003BFAF9 /* Sources */,
 				94489F06238360B2003BFAF9 /* Frameworks */,
 				94489F07238360B2003BFAF9 /* Resources */,
+				1CC49EB085F4384297B14B8C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,15 +370,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03E393F43A0169CFCED7BC37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testeSkyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17C503C23A90ACA788BBD6B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testeSky-testeSkyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CC49EB085F4384297B14B8C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testeSky-testeSkyUITests/Pods-testeSky-testeSkyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testeSky-testeSkyUITests/Pods-testeSky-testeSkyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testeSky-testeSkyUITests/Pods-testeSky-testeSkyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3579CEF6E67391F7C8DB0D9B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testeSky-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDD3F76D25579A29B895FFF0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testeSky/Pods-testeSky-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testeSky/Pods-testeSky-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testeSky/Pods-testeSky-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		94489EE1238360B0003BFAF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				94489EED238360B0003BFAF9 /* ViewController.swift in Sources */,
+				9403635C23836683007FB59D /* FilmesViewController.swift in Sources */,
 				94489EF3238360B0003BFAF9 /* testeSky.xcdatamodeld in Sources */,
+				9403636323836C49007FB59D /* Filme.swift in Sources */,
 				94489EE9238360B0003BFAF9 /* AppDelegate.swift in Sources */,
+				9403636123836A61007FB59D /* DAOFilme.swift in Sources */,
 				94489EEB238360B0003BFAF9 /* SceneDelegate.swift in Sources */,
+				9403635F23836697007FB59D /* FilmeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +656,7 @@
 		};
 		94489F13238360B2003BFAF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD59C8BE279F938D8125157B /* Pods-testeSky.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -502,6 +675,7 @@
 		};
 		94489F14238360B2003BFAF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20D49E5276F5BE80C39BD76 /* Pods-testeSky.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -520,6 +694,7 @@
 		};
 		94489F16238360B2003BFAF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CA0FCC79429E3D677915598 /* Pods-testeSkyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -542,6 +717,7 @@
 		};
 		94489F17238360B2003BFAF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8E2C07A79E422FD33F1531B /* Pods-testeSkyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -564,6 +740,7 @@
 		};
 		94489F19238360B2003BFAF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1B478350BBB7E682A340D11 /* Pods-testeSky-testeSkyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +761,7 @@
 		};
 		94489F1A238360B2003BFAF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84781355C8E478C8BFE6F7D9 /* Pods-testeSky-testeSkyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
