@@ -76,15 +76,7 @@ class DAOFilme {
     
     func baixarPoster( url: String, completion: @escaping (UIImage) -> () ) {
         
-        let primeiroCharacter = url.firstIndex(of: "h")!
-    
-        let ultimaBarra = url.lastIndex(of: "/")!
-        
-        let codigoImagem = String(url.prefix(upTo: primeiroCharacter) + url.suffix(from: url.index(after: ultimaBarra)))
-                    
-        let inicioURL = "https://image.tmdb.org/t/p/original/"
-        
-        let novaUrl = inicioURL + codigoImagem
+        let novaUrl = tratarUrl(url: url)
          
         Alamofire.request(novaUrl).responseImage { (response) in
                    
@@ -107,15 +99,7 @@ class DAOFilme {
 
         for url in urls {
             
-            let primeiroCharacter = url.firstIndex(of: "h")!
-               
-            let ultimaBarra = url.lastIndex(of: "/")!
-                   
-            let codigoImagem = String(url.prefix(upTo: primeiroCharacter) + url.suffix(from: url.index(after: ultimaBarra)))
-                               
-            let inicioURL = "https://image.tmdb.org/t/p/w500/"
-                   
-            let novaUrl = inicioURL + codigoImagem
+           let novaUrl = tratarUrl(url: url)
                         
             Alamofire.request(novaUrl).responseImage { (response) in
                               
@@ -135,6 +119,23 @@ class DAOFilme {
         }
         
         semaforo.wait()
+        
+    }
+    
+    func tratarUrl(url: String) -> String {
+        
+        //TRATAR A URL, TROCANDO OS TAMANHOS INVÁLIDOS POR original
+        let primeiroCharacter = url.firstIndex(of: "h")!
+        
+        let ultimaBarra = url.lastIndex(of: "/")!
+            
+        let codigoImagem = String(url.prefix(upTo: primeiroCharacter) + url.suffix(from: url.index(after: ultimaBarra)))
+                        
+        let inicioURL = "https://image.tmdb.org/t/p/original/"
+            
+        let novaUrl = inicioURL + codigoImagem
+        
+        return novaUrl
         
     }
     
