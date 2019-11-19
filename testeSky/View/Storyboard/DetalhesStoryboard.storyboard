@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detalhes View Controller-->
         <scene sceneID="YOK-TP-ThT">
             <objects>
-                <viewController id="VNa-AJ-L24" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetalhesViewController" id="VNa-AJ-L24" customClass="DetalhesViewController" customModule="testeSky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sau-EM-W3v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -18,21 +18,23 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goZ-0W-Be1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="292"/>
                             </scrollView>
-                            <view alpha="0.050000000000000003" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3Q-Ri-jXK">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="62" id="rDb-DI-Ouv"/>
-                                </constraints>
-                            </view>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8t-zC-4pK">
                                 <rect key="frame" x="4" y="23" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.31134952910958902" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0eO-dQ-cN9"/>
                                     <constraint firstAttribute="width" constant="46" id="z7S-ND-F5H"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="arrow.left" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="voltar:" destination="VNa-AJ-L24" eventType="touchUpInside" id="6c9-pd-I2Z"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Título do filme" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C91-8K-aYL">
                                 <rect key="frame" x="0.0" y="302" width="375" height="29"/>
@@ -85,9 +87,7 @@
                             <constraint firstItem="goZ-0W-Be1" firstAttribute="trailing" secondItem="108-Pr-dph" secondAttribute="trailing" id="0mr-OT-Bso"/>
                             <constraint firstItem="goZ-0W-Be1" firstAttribute="leading" secondItem="108-Pr-dph" secondAttribute="leading" id="Acg-nT-Zed"/>
                             <constraint firstItem="wjv-j2-Om1" firstAttribute="top" secondItem="lGZ-En-M7G" secondAttribute="bottom" constant="12.5" id="JDe-4F-HUP"/>
-                            <constraint firstItem="J3Q-Ri-jXK" firstAttribute="top" secondItem="Sau-EM-W3v" secondAttribute="top" id="Jsg-8f-6fz"/>
                             <constraint firstItem="o8t-zC-4pK" firstAttribute="leading" secondItem="108-Pr-dph" secondAttribute="leading" constant="4" id="KYP-vn-SE4"/>
-                            <constraint firstItem="J3Q-Ri-jXK" firstAttribute="trailing" secondItem="108-Pr-dph" secondAttribute="trailing" id="Mgx-mN-VQt"/>
                             <constraint firstItem="ajr-na-hu8" firstAttribute="top" secondItem="lGZ-En-M7G" secondAttribute="bottom" constant="12.5" id="Npe-bO-Ksw"/>
                             <constraint firstItem="ajr-na-hu8" firstAttribute="leading" secondItem="108-Pr-dph" secondAttribute="leading" constant="16" id="Npp-gd-86J"/>
                             <constraint firstItem="lGZ-En-M7G" firstAttribute="top" secondItem="YGA-aC-9DJ" secondAttribute="bottom" constant="2.5" id="OmR-tK-4I4"/>
@@ -100,7 +100,6 @@
                             <constraint firstItem="wjv-j2-Om1" firstAttribute="leading" secondItem="lJy-pD-PVD" secondAttribute="trailing" constant="3" id="ZyL-hT-2Oe"/>
                             <constraint firstItem="108-Pr-dph" firstAttribute="trailing" secondItem="wjv-j2-Om1" secondAttribute="trailing" constant="16" id="ati-3l-55D"/>
                             <constraint firstItem="lJy-pD-PVD" firstAttribute="top" secondItem="lGZ-En-M7G" secondAttribute="bottom" constant="12.5" id="bkn-ho-KFy"/>
-                            <constraint firstItem="J3Q-Ri-jXK" firstAttribute="leading" secondItem="108-Pr-dph" secondAttribute="leading" id="dxI-ul-Pe9"/>
                             <constraint firstItem="2Q8-rn-5Vc" firstAttribute="top" secondItem="lGZ-En-M7G" secondAttribute="bottom" constant="12.5" id="kPT-LP-sQ6"/>
                             <constraint firstItem="C91-8K-aYL" firstAttribute="trailing" secondItem="108-Pr-dph" secondAttribute="trailing" id="mHV-a4-FD9"/>
                             <constraint firstItem="lGZ-En-M7G" firstAttribute="leading" secondItem="108-Pr-dph" secondAttribute="leading" constant="16" id="phK-0T-oPC"/>
@@ -110,6 +109,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="108-Pr-dph"/>
                     </view>
+                    <connections>
+                        <outlet property="anoLabel" destination="wjv-j2-Om1" id="nbI-kY-Vd7"/>
+                        <outlet property="duracaoLabel" destination="2Q8-rn-5Vc" id="Tjl-gq-yMz"/>
+                        <outlet property="imagensScrollView" destination="goZ-0W-Be1" id="8Iz-U2-KA0"/>
+                        <outlet property="sinopseLabel" destination="lGZ-En-M7G" id="srN-Mw-U28"/>
+                        <outlet property="tituloLabel" destination="C91-8K-aYL" id="QUE-gi-VIN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VMM-69-ard" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

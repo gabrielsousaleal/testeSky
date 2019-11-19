@@ -16,8 +16,6 @@
 		9403636523838E0D007FB59D /* DetalhesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9403636423838E0D007FB59D /* DetalhesStoryboard.storyboard */; };
 		94489EE9238360B0003BFAF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94489EE8238360B0003BFAF9 /* AppDelegate.swift */; };
 		94489EEB238360B0003BFAF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94489EEA238360B0003BFAF9 /* SceneDelegate.swift */; };
-		94489EED238360B0003BFAF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94489EEC238360B0003BFAF9 /* ViewController.swift */; };
-		94489EF0238360B0003BFAF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94489EEE238360B0003BFAF9 /* Main.storyboard */; };
 		94489EF3238360B0003BFAF9 /* testeSky.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 94489EF1238360B0003BFAF9 /* testeSky.xcdatamodeld */; };
 		94489EF5238360B1003BFAF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94489EF4238360B1003BFAF9 /* Assets.xcassets */; };
 		94489EF8238360B1003BFAF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94489EF6238360B1003BFAF9 /* LaunchScreen.storyboard */; };
@@ -25,6 +23,7 @@
 		94489F0E238360B2003BFAF9 /* testeSkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94489F0D238360B2003BFAF9 /* testeSkyUITests.swift */; };
 		94489F2023836102003BFAF9 /* FilmesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94489F1F23836102003BFAF9 /* FilmesStoryboard.storyboard */; };
 		94489F2223836115003BFAF9 /* NavigationControllerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94489F2123836115003BFAF9 /* NavigationControllerStoryboard.storyboard */; };
+		94F8C68B2383952300F688A1 /* DetalhesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94F8C68A2383952300F688A1 /* DetalhesViewController.swift */; };
 		E604CBC9DA8F5CF4F2ED2578 /* Pods_testeSky_testeSkyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C9E95DA3B6E02C6F396FC6 /* Pods_testeSky_testeSkyUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,8 +57,6 @@
 		94489EE5238360B0003BFAF9 /* testeSky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testeSky.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94489EE8238360B0003BFAF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94489EEA238360B0003BFAF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		94489EEC238360B0003BFAF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		94489EEF238360B0003BFAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		94489EF2238360B0003BFAF9 /* testeSky.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testeSky.xcdatamodel; sourceTree = "<group>"; };
 		94489EF4238360B1003BFAF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		94489EF7238360B1003BFAF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,6 +69,7 @@
 		94489F0F238360B2003BFAF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		94489F1F23836102003BFAF9 /* FilmesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilmesStoryboard.storyboard; sourceTree = "<group>"; };
 		94489F2123836115003BFAF9 /* NavigationControllerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NavigationControllerStoryboard.storyboard; sourceTree = "<group>"; };
+		94F8C68A2383952300F688A1 /* DetalhesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesViewController.swift; sourceTree = "<group>"; };
 		A1B478350BBB7E682A340D11 /* Pods-testeSky-testeSkyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeSky-testeSkyUITests.debug.xcconfig"; path = "Target Support Files/Pods-testeSky-testeSkyUITests/Pods-testeSky-testeSkyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A20D49E5276F5BE80C39BD76 /* Pods-testeSky.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testeSky.release.xcconfig"; path = "Target Support Files/Pods-testeSky/Pods-testeSky.release.xcconfig"; sourceTree = "<group>"; };
 		DA2E3C98774B8D1E1E10066A /* Pods_testeSkyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testeSkyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,8 +167,6 @@
 				94489F1B238360C2003BFAF9 /* Modelo */,
 				94489EE8238360B0003BFAF9 /* AppDelegate.swift */,
 				94489EEA238360B0003BFAF9 /* SceneDelegate.swift */,
-				94489EEC238360B0003BFAF9 /* ViewController.swift */,
-				94489EEE238360B0003BFAF9 /* Main.storyboard */,
 				94489EF4238360B1003BFAF9 /* Assets.xcassets */,
 				94489EF6238360B1003BFAF9 /* LaunchScreen.storyboard */,
 				94489EF9238360B1003BFAF9 /* Info.plist */,
@@ -218,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				9403635B23836683007FB59D /* FilmesViewController.swift */,
+				94F8C68A2383952300F688A1 /* DetalhesViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -353,7 +350,6 @@
 				94489F2223836115003BFAF9 /* NavigationControllerStoryboard.storyboard in Resources */,
 				94489EF5238360B1003BFAF9 /* Assets.xcassets in Resources */,
 				9403636523838E0D007FB59D /* DetalhesStoryboard.storyboard in Resources */,
-				94489EF0238360B0003BFAF9 /* Main.storyboard in Resources */,
 				94489F2023836102003BFAF9 /* FilmesStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,11 +478,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94489EED238360B0003BFAF9 /* ViewController.swift in Sources */,
 				9403635C23836683007FB59D /* FilmesViewController.swift in Sources */,
 				94489EF3238360B0003BFAF9 /* testeSky.xcdatamodeld in Sources */,
 				9403636323836C49007FB59D /* Filme.swift in Sources */,
 				94489EE9238360B0003BFAF9 /* AppDelegate.swift in Sources */,
+				94F8C68B2383952300F688A1 /* DetalhesViewController.swift in Sources */,
 				9403636123836A61007FB59D /* DAOFilme.swift in Sources */,
 				94489EEB238360B0003BFAF9 /* SceneDelegate.swift in Sources */,
 				9403635F23836697007FB59D /* FilmeCell.swift in Sources */,
@@ -525,14 +521,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		94489EEE238360B0003BFAF9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				94489EEF238360B0003BFAF9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		94489EF6238360B1003BFAF9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -673,7 +661,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.testeSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -692,7 +680,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.testeSky;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

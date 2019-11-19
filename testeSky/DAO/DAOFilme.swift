@@ -82,7 +82,7 @@ class DAOFilme {
         
         let codigoImagem = String(url.prefix(upTo: primeiroCharacter) + url.suffix(from: url.index(after: ultimaBarra)))
                     
-        let inicioURL = "https://image.tmdb.org/t/p/w500/"
+        let inicioURL = "https://image.tmdb.org/t/p/original/"
         
         let novaUrl = inicioURL + codigoImagem
          
@@ -106,8 +106,18 @@ class DAOFilme {
         let semaforo = DispatchSemaphore(value: 2)
 
         for url in urls {
+            
+            let primeiroCharacter = url.firstIndex(of: "h")!
+               
+            let ultimaBarra = url.lastIndex(of: "/")!
+                   
+            let codigoImagem = String(url.prefix(upTo: primeiroCharacter) + url.suffix(from: url.index(after: ultimaBarra)))
+                               
+            let inicioURL = "https://image.tmdb.org/t/p/w500/"
+                   
+            let novaUrl = inicioURL + codigoImagem
                         
-            Alamofire.request(url).responseImage { (response) in
+            Alamofire.request(novaUrl).responseImage { (response) in
                               
                 if let result = response.result.value {
                     backDrops.append(result)

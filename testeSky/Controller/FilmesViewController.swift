@@ -75,9 +75,9 @@ class FilmesViewController: UIViewController {
         let screen = UIScreen.main.bounds
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 8, bottom: 10, right: 8)
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 16, bottom: 10, right: 16)
         layout.itemSize = CGSize(width: screen.width/2.30, height: screen.height/2.5)
-        layout.minimumInteritemSpacing = 30
+        layout.minimumInteritemSpacing = 1
         layout.minimumLineSpacing = 40
         
         FilmesCollectionView.collectionViewLayout = layout
@@ -104,10 +104,12 @@ extension FilmesViewController: UICollectionViewDelegate {
 
 extension FilmesViewController: UICollectionViewDataSource {
     
+    //MARK: NUMBER OF ITENS
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return listaFilmes.count
     }
     
+    //MARK: CELL FOR ITEM
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilmeCell", for: indexPath) as! FilmeCell
@@ -122,6 +124,27 @@ extension FilmesViewController: UICollectionViewDataSource {
         
     }
     
+    //MARK: DID SELECT ITEM
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let filme = listaFilmes[indexPath.row]
+        
+        //INSTANCIAR VIEW CONTROLLER DETALHES
+        let storyboard = UIStoryboard(name: "DetalhesStoryboard", bundle: nil)
+        
+        let detalhesVC = storyboard.instantiateViewController(identifier: "DetalhesViewController") as? DetalhesViewController
+        
+        detalhesVC?.filme = filme
+        
+        navigationController?.pushViewController(detalhesVC!, animated: true)
+        
+        
+    }
     
-    
+}
+
+extension FilmesViewController {
+ override var preferredStatusBarStyle: UIStatusBarStyle {
+    return .lightContent
+}
 }
