@@ -50,13 +50,6 @@ class FilmesViewController: UIViewController {
         
     }
     
-    func setarDelegates(){
-        
-        FilmesCollectionView.delegate = self
-        FilmesCollectionView.dataSource = self
-        
-    }
-    
     
     //*************************************************************
     //MARK: LAYOUT
@@ -76,7 +69,7 @@ class FilmesViewController: UIViewController {
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 20, left: 16, bottom: 10, right: 16)
-        layout.itemSize = CGSize(width: screen.width/2.30, height: screen.height/2.5)
+        layout.itemSize = CGSize(width: screen.width/2.30, height: 276)
         layout.minimumInteritemSpacing = 1
         layout.minimumLineSpacing = 40
         
@@ -84,6 +77,16 @@ class FilmesViewController: UIViewController {
         
     }
     
+    //*************************************************************
+    //MARK: DELEGATES
+    //*************************************************************
+    
+    func setarDelegates(){
+        
+        FilmesCollectionView.delegate = self
+        FilmesCollectionView.dataSource = self
+        
+    }
     
 }
 

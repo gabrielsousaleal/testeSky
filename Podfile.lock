@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (4.9.0)
+  - AlamofireImage (3.5.2):
+    - Alamofire (~> 4.8)
+  - Auk (11.0.0):
+    - moa
+  - moa (12.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
+  - Auk
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - Auk
+    - moa
+
+SPEC CHECKSUMS:
+  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  AlamofireImage: 63cfe3baf1370be6c498149687cf6db3e3b00999
+  Auk: 7cc533252e2caaaa36b2be19c0b799f6057c365a
+  moa: e2346f12de6c65bbca4d103950d45db9e46785ef
+
+PODFILE CHECKSUM: 2344d853bf2d5ac0cda0cf2019731ff691fea388
+
+COCOAPODS: 1.8.3
