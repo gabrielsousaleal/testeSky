@@ -75,17 +75,27 @@ class DAOFilme {
        }
     
     func baixarPoster( url: String, completion: @escaping (UIImage) -> () ) {
-               
-               Alamofire.request(url).responseImage { (response) in
-                   
-                   if let result = response.result.value {
+        
+        let primeiroCharacter = url.firstIndex(of: "h")!
+    
+        let ultimaBarra = url.lastIndex(of: "/")!
+        
+        let codigoImagem = String(url.prefix(upTo: primeiroCharacter) + url.suffix(from: url.index(after: ultimaBarra)))
                     
-                       completion(result)
+        let inicioURL = "https://image.tmdb.org/t/p/w500/"
+        
+        let novaUrl = inicioURL + codigoImagem
+         
+        Alamofire.request(novaUrl).responseImage { (response) in
+                   
+            if let result = response.result.value {
+                    
+                completion(result)
                        
-                   } else {
-                       completion(UIImage())
-                   }
-               }
+            } else {
+                completion(UIImage())
+            }
+        }
         
     }
     

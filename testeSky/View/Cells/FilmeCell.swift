@@ -21,4 +21,15 @@ class FilmeCell: UICollectionViewCell {
     @IBOutlet var classificacaoLabel: UILabel!
     
     
+    func configurarCell(filme: FilmeObjeto) {
+        
+        posterView.image = filme.poster
+        
+        nomeLabel.text = filme.filmeDecodable?.title ?? "?????"
+        
+        posterView.layer.cornerRadius = 6
+        
+    }
+    
+    
 }

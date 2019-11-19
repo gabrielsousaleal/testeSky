@@ -15,9 +15,15 @@ class FilmesViewController: UIViewController {
     //MARK: STORYBOARD OUTLETS
     //*************************************************************
     
-
-    @IBOutlet var FilmesCollectionView: UICollectionView!
+   @IBOutlet var FilmesCollectionView: UICollectionView!
     
+    
+    //*************************************************************
+    //MARK: VARIAVEIS
+    //*************************************************************
+    
+    var listaFilmes: [FilmeObjeto] = []
+
     
     //*************************************************************
     //MARK: FUNCOES DA VIEW
@@ -26,10 +32,19 @@ class FilmesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setarDelegates()
+        
         configurarTela()
         
         DAOFilme().baixarFilmesJSON { filmes in
             
+            DispatchQueue.main.async {
+            
+            self.listaFilmes = filmes
+            
+            self.FilmesCollectionView.reloadData()
+                
+            }
             
         }
         
@@ -50,6 +65,22 @@ class FilmesViewController: UIViewController {
     func configurarTela(){
         
         navigationController?.navigationBar.isHidden = true
+        
+        setarLayoutCells()
+        
+    }
+    
+    func setarLayoutCells(){
+        
+        let screen = UIScreen.main.bounds
+        
+        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 8, bottom: 10, right: 8)
+        layout.itemSize = CGSize(width: screen.width/2.30, height: screen.height/2.5)
+        layout.minimumInteritemSpacing = 30
+        layout.minimumLineSpacing = 40
+        
+        FilmesCollectionView.collectionViewLayout = layout
         
     }
     
@@ -74,13 +105,20 @@ extension FilmesViewController: UICollectionViewDelegate {
 extension FilmesViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return listaFilmes.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilmeCell", for: indexPath) as! FilmeCell
         
-        return UICollectionViewCell()
+        let row = indexPath.row
+        
+        let filme = listaFilmes[row]
+        
+        cell.configurarCell(filme: filme)
+        
+        return cell
         
     }
     
