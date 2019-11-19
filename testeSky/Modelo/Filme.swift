@@ -57,27 +57,7 @@ class FilmeObjeto {
         })
         
     }
-    
-    
-    
-    //**********************************************************
-    //MARK: FUNCOES DO OBJETO
-    //**********************************************************
 
-    func getBackDrops( completion: @escaping ([UIImage]) -> () ) {
-        
-        DAOFilme().baixarBackDrops(urls: filmeDecodable?.backdrops_url ?? []) { backdrops in
-            
-            print(backdrops)
-            
-            completion(backdrops)
-            
-        }
-        
-    }
-    
-    
-    
 }
 
 

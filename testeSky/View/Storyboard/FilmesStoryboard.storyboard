@@ -11,7 +11,7 @@
         <!--Filmes View Controller-->
         <scene sceneID="oVi-wd-lNu">
             <objects>
-                <viewController id="ZtE-Qd-fbD" customClass="FilmesViewController" customModule="testeSky" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FilmesViewController" id="ZtE-Qd-fbD" customClass="FilmesViewController" customModule="testeSky" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mlF-6o-1EM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
